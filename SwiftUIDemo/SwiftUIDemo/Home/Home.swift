@@ -14,22 +14,24 @@ struct Home : View {
         return .init(grouping: landmarks, by: { $0.category.rawValue })
     }
 
+    private var featuredLandmarks: [Landmark] {
+        let landmarks: [Landmark] = DataService.load(.landmarks)
+        return landmarks.filter { $0.isFeatured }
+    }
+
     var body: some View {
         NavigationView {
             List {
+                FeaturedLandmarks(landmarks: featuredLandmarks)
+                    .scaledToFit()
+                    .listRowInsets(EdgeInsets())
+
                 ForEach(categories.keys.sorted().identified(by: \.self)) { key in
-                    Text(key)
+                    CategoryRow(title: key, landmarks: self.categories[key]!)
                 }
+                .listRowInsets(EdgeInsets())
             }
-            .navigationBarTitle(Text("Featured"))
+            .navigationBarTitle("Featured")
         }
     }
 }
-
-#if DEBUG
-struct Home_Previews : PreviewProvider {
-    static var previews: some View {
-        Home()
-    }
-}
-#endif

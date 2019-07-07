@@ -16,6 +16,7 @@ struct Landmark: Hashable, Codable, Identifiable {
     let park: String
     let category: Category
     let isFavorite: Bool
+    let isFeatured: Bool
 
     enum Category: String, CaseIterable, Codable, Hashable {
         case featured = "Featured"
