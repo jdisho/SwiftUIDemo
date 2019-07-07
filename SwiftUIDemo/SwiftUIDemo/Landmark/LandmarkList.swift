@@ -14,22 +14,19 @@ struct LandmarkList : View {
     private let landmarks: [Landmark] = DataService.load(.landmarks)
 
     var body: some View {
-        NavigationView {
-            List {
-                Toggle(isOn: $showFavoritesOnly) {
-                    Text("Show only favorites")
-                }
-                ForEach(landmarks) { landmark in
-                    if !self.showFavoritesOnly || landmark.isFavorite {
-                        NavigationLink(destination: LandmarkDetail(landmark: landmark)){
-                            LandmarkRow(landmark: landmark)
-                        }
+        List {
+            Toggle(isOn: $showFavoritesOnly) {
+                Text("Show only favorites")
+            }
+            ForEach(landmarks) { landmark in
+                if !self.showFavoritesOnly || landmark.isFavorite {
+                    NavigationLink(destination: LandmarkDetail(landmark: landmark)){
+                        LandmarkRow(landmark: landmark)
                     }
                 }
             }
-
-            .navigationBarTitle("Landmarks")
         }
+        .navigationBarTitle("Landmarks")
 
     }
 }

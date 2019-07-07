@@ -12,6 +12,12 @@ struct FeaturedLandmarks : View {
     let landmarks: [Landmark]
 
     var body: some View {
-        ImageService.shared.image(name: landmarks[0].imageName, size: 250).resizable()
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(alignment: .top, spacing: 8) {
+                ForEach(landmarks) { landmark in
+                    ImageService.shared.image(name: landmark.imageName, size: Int(UIScreen.main.bounds.width))
+                }
+            }
+        }
     }
 }

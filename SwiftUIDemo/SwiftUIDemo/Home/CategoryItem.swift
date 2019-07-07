@@ -14,8 +14,10 @@ struct CategoryItem : View {
     var body: some View {
         VStack {
             ImageService.shared.image(name: landmark.imageName, size: 160)
+                .renderingMode(.original)
                 .cornerRadius(4)
             Text(landmark.name)
+                .color(.primary)
                 .font(.caption)
                 .bold()
         }

@@ -22,6 +22,10 @@ struct Home : View {
     var body: some View {
         NavigationView {
             List {
+                NavigationLink(destination: LandmarkList()) {
+                    Text("See All")
+                }
+                
                 FeaturedLandmarks(landmarks: featuredLandmarks)
                     .scaledToFit()
                     .listRowInsets(EdgeInsets())
