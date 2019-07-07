@@ -15,7 +15,7 @@ final class ImageService {
     private var images: _ImageDictionary = [:]
 
     private static var originalSize = 250
-    private static var scale = 2
+    private static var scale = 1
 
     static var shared = ImageService()
 
