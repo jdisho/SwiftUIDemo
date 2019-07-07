@@ -26,6 +26,7 @@
 		2C44A74122D20CCE00E7F988 /* twinlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C44A73322D20CCE00E7F988 /* twinlake.jpg */; };
 		2C44A74222D20CCE00E7F988 /* lakemcdonald.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C44A73422D20CCE00E7F988 /* lakemcdonald.jpg */; };
 		2C44A74422D20CCE00E7F988 /* umbagog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C44A73622D20CCE00E7F988 /* umbagog.jpg */; };
+		2C44A74722D20DB300E7F988 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C44A74622D20DB300E7F988 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		2C44A73322D20CCE00E7F988 /* twinlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twinlake.jpg; sourceTree = "<group>"; };
 		2C44A73422D20CCE00E7F988 /* lakemcdonald.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lakemcdonald.jpg; sourceTree = "<group>"; };
 		2C44A73622D20CCE00E7F988 /* umbagog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = umbagog.jpg; sourceTree = "<group>"; };
+		2C44A74622D20DB300E7F988 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				2C44A71422D20BDD00E7F988 /* AppDelegate.swift */,
 				2C44A71622D20BDD00E7F988 /* SceneDelegate.swift */,
 				2C44A71822D20BDD00E7F988 /* ContentView.swift */,
+				2C44A74522D20D8200E7F988 /* Services */,
 				2C44A72822D20CAE00E7F988 /* Resources */,
 				2C44A71A22D20BDE00E7F988 /* Assets.xcassets */,
 				2C44A71F22D20BDE00E7F988 /* LaunchScreen.storyboard */,
@@ -120,6 +123,14 @@
 				2C44A73622D20CCE00E7F988 /* umbagog.jpg */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		2C44A74522D20D8200E7F988 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2C44A74622D20DB300E7F988 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 				2C44A71522D20BDD00E7F988 /* AppDelegate.swift in Sources */,
 				2C44A71722D20BDD00E7F988 /* SceneDelegate.swift in Sources */,
 				2C44A71922D20BDD00E7F988 /* ContentView.swift in Sources */,
+				2C44A74722D20DB300E7F988 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
