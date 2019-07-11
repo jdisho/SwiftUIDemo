@@ -28,6 +28,7 @@
 		2C44A74422D20CCE00E7F988 /* umbagog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C44A73622D20CCE00E7F988 /* umbagog.jpg */; };
 		2C44A74722D20DB300E7F988 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C44A74622D20DB300E7F988 /* DataService.swift */; };
 		2C44A74922D20E5B00E7F988 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C44A74822D20E5B00E7F988 /* ImageService.swift */; };
+		DC359D4C22D79180008D6DDB /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC359D4B22D79180008D6DDB /* Landmark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		2C44A73622D20CCE00E7F988 /* umbagog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = umbagog.jpg; sourceTree = "<group>"; };
 		2C44A74622D20DB300E7F988 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		2C44A74822D20E5B00E7F988 /* ImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		DC359D4B22D79180008D6DDB /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				2C44A71422D20BDD00E7F988 /* AppDelegate.swift */,
 				2C44A71622D20BDD00E7F988 /* SceneDelegate.swift */,
 				2C44A71822D20BDD00E7F988 /* ContentView.swift */,
+				DC359D4A22D79168008D6DDB /* Models */,
 				2C44A74522D20D8200E7F988 /* Services */,
 				2C44A72822D20CAE00E7F988 /* Resources */,
 				2C44A71A22D20BDE00E7F988 /* Assets.xcassets */,
@@ -134,6 +137,14 @@
 				2C44A74622D20DB300E7F988 /* DataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		DC359D4A22D79168008D6DDB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC359D4B22D79180008D6DDB /* Landmark.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +236,7 @@
 				2C44A71922D20BDD00E7F988 /* ContentView.swift in Sources */,
 				2C44A74922D20E5B00E7F988 /* ImageService.swift in Sources */,
 				2C44A74722D20DB300E7F988 /* DataService.swift in Sources */,
+				DC359D4C22D79180008D6DDB /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
